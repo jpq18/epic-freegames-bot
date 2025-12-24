@@ -1,8 +1,8 @@
 import os, json, requests
 from telegram import Bot, InlineKeyboardButton, InlineKeyboardMarkup
 
-BOT_TOKEN = os.environ["BOT_TOKEN"]
-CHANNEL_ID = os.environ["CHANNEL_ID"]
+BOT_TOKEN = os.environ["8230617052:AAGvh5aIFsc6nL8kA07_lIa9AqeqaZc1okM"]
+CHANNEL_ID = os.environ["@iraqfreegames"]
 STATE_FILE = "posted.json"
 
 def load_state():
@@ -54,7 +54,7 @@ def post(bot, g):
     bot.send_photo(CHANNEL_ID, g["image"], caption=text, reply_markup=kb)
 
 def main():
-    bot = Bot(BOT_TOKEN)
+    bot = Bot(8230617052:AAGvh5aIFsc6nL8kA07_lIa9AqeqaZc1okM)
     posted = load_state()
 
     for g in fetch_free_games():
